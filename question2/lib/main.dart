@@ -22,15 +22,17 @@ class Lister extends StatefulWidget {
 class _ListerState extends State<Lister> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            RaisedButton(
-              child: Text('Load'),
-            )
-          ],
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              RaisedButton(
+                child: Text('Load'),
+              )
+            ],
+          ),
         ),
       ),
     );
